@@ -30,8 +30,19 @@ main {
     padding: 20px;
 }
 
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .product {
     text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
 }
 
 .product img {
