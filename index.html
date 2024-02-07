@@ -14,21 +14,22 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Prodotti</a></li>
                 <li><a href="#">Contatti</a></li>
+                <li><a href="#">Login</a></li> <!-- Aggiunto link per accedere alla pagina di login -->
             </ul>
         </nav>
     </header>
     <main>
-        <section class="products">
-            <div class="product">
-                <a href="checkout.html">
-                    <img src="prodotto1.jpg" alt="Prodotto 1">
-                    <h2>Prodotto 1</h2>
-                    <p>Descrizione del prodotto 1.</p>
-                    <p>Prezzo: $19.99</p>
-                </a>
-            </div>
-            <!-- Aggiungi altri prodotti qui -->
+        <section class="login-form">
+            <h2>Accesso</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Accedi</button>
+            </form>
         </section>
+        <!-- Altre sezioni del sito qui -->
     </main>
     <footer>
         <p>&copy; 2024 Il Mio Sito E-commerce. Tutti i diritti riservati.</p>
