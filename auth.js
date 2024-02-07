@@ -20,15 +20,17 @@ loginForm.addEventListener('submit', (e) => {
     const password = loginForm['password'].value;
 
     firebase.auth().signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Login success
-            console.log('Login success');
-            document.getElementById('logoutBtn').style.display = 'block'; // Mostra il bottone logout
-        })
-        .catch((error) => {
-            // Login error
-            console.error('Login error:', error.message);
-        });
+    .then((userCredential) => {
+        // Login success
+        console.log('Login success');
+        document.getElementById('logoutBtn').style.display = 'block'; // Mostra il bottone logout
+    })
+    .catch((error) => {
+        // Login error
+        console.error('Login error:', error.code, error.message);
+        // Mostra un messaggio di errore all'utente
+        alert('Errore durante l\'autenticazione: ' + error.message);
+    });
 });
 
 // Logout button
