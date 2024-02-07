@@ -1,12 +1,13 @@
 // firebase-config.js
 
 const firebaseConfig = {
-    apiKey: "LA_TUA_API_KEY",
-    authDomain: "IL_TUO_PROGETTO.firebaseapp.com",
-    projectId: "IL_TUO_PROGETTO",
-    storageBucket: "IL_TUO_PROGETTO.appspot.com",
-    messagingSenderId: "IL_TUO_SENDER_ID",
-    appId: "IL_TUO_APP_ID"
+    
+    apiKey: "AIzaSyDI2NuEU1YmV4bRlA4apifmxN9jqSg3lkc",
+    authDomain: "chatgpt-6cdee.firebaseapp.com",
+    projectId: "chatgpt-6cdee",
+    storageBucket: "chatgpt-6cdee",
+//    messagingSenderId: "SENDER_ID",
+//    appId: "APP_ID"
 };
 
 firebase.initializeApp(firebaseConfig);
