@@ -20,33 +20,18 @@
     <main>
         <section class="products">
             <div class="product">
-                <img src="prodotto1.jpg" alt="Prodotto 1">
-                <h2>Prodotto 1</h2>
-                <p>Descrizione del prodotto 1.</p>
-                <p>Prezzo: $19.99</p>
-                <button onclick="showCheckoutForm()">Acquista</button>
+                <a href="checkout.html">
+                    <img src="prodotto1.jpg" alt="Prodotto 1">
+                    <h2>Prodotto 1</h2>
+                    <p>Descrizione del prodotto 1.</p>
+                    <p>Prezzo: $19.99</p>
+                </a>
             </div>
             <!-- Aggiungi altri prodotti qui -->
-        </section>
-        <section id="checkoutForm" class="hidden">
-            <h2>Checkout</h2>
-            <form>
-                <label for="firstName">Nome:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <label for="lastName">Cognome:</label>
-                <input type="text" id="lastName" name="lastName" required>
-                <button type="submit">Completa l'acquisto</button>
-            </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Il Mio Sito E-commerce. Tutti i diritti riservati.</p>
     </footer>
-    <script>
-        function showCheckoutForm() {
-            var checkoutForm = document.getElementById("checkoutForm");
-            checkoutForm.classList.toggle("hidden");
-        }
-    </script>
 </body>
 </html>
