@@ -59,11 +59,7 @@ main {
     margin-top: 10px;
 }
 
-#checkoutForm {
-    margin-top: 20px;
-}
-
-.hidden {
+#checkoutForm  {
     display: none;
 }
 
