@@ -6,8 +6,8 @@ const firebaseConfig = {
     authDomain: "chatgpt-6cdee.firebaseapp.com",
     projectId: "chatgpt-6cdee",
     storageBucket: "chatgpt-6cdee.appspot.com",
-    messagingSenderId: "443840321392"
-//    appId: "APP_ID"
+    messagingSenderId: "443840321392",
+    appId: "1:443840321392:web:3e47c2ec17537db66f21b5"
 };
 
 firebase.initializeApp(firebaseConfig);
