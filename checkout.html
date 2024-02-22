@@ -13,7 +13,7 @@
     <main>
         <section class="checkout-form">
             <h2>Completa l'acquisto</h2>
-            <form>
+            <form id="checkoutForm">
                 <label for="firstName">Nome:</label>
                 <input type="text" id="firstName" name="firstName" required>
                 <label for="lastName">Cognome:</label>
@@ -29,5 +29,32 @@
     <footer>
         <p>&copy; 2024 Il Mio Sito E-commerce. Tutti i diritti riservati.</p>
     </footer>
+    <script>
+        document.querySelector('#checkoutForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get form fields
+            var firstName = document.getElementById('firstName');
+            var lastName = document.getElementById('lastName');
+            var email = document.getElementById('email');
+            var address = document.getElementById('address');
+
+            // Check that all fields have been filled out
+            if (!firstName.value || !lastName.value || !email.value || !address.value) {
+                alert('Per favore, completa tutti i campi.');
+                return;
+            }
+
+            // Check that the email address is in a valid format
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailRegex.test(email.value)) {
+                alert('Per favore, inserisci un indirizzo email valido.');
+                return;
+            }
+
+            // If everything is valid, submit the form
+            this.submit();
+        });
+    </script>
 </body>
 </html>
